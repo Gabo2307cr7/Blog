@@ -139,13 +139,25 @@
   <div class="container">
     <main>
       <article>
-        <h2>🌄 Primer artículo del blog</h2>
+        <h2>🌄 Primer artículo: Estructura y Componentes</h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
         <p>Este es el primer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
       </article>
 
       <article>
-        <h2>📚 Segundo artículo: Aprendiendo HTML</h2>
+        <h2>📚 Segundo artículo: Servicios  y Aplicaciones de Internet</h2>
+        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
+        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
+      </article>
+
+     <article>
+        <h2>📚 Tercer artículo: Seguridad en Internet </h2>
+        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
+        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
+      </article>
+
+       <article>
+        <h2>📚 Cuarto articulo artículo: Nuevas tecnologias Emergentes</h2>
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
         <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
       </article>
