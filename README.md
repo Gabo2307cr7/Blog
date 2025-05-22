@@ -161,6 +161,18 @@
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
         <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
       </article>
+
+      <article>
+  <h2>📊 Encuesta: ¿Cuál es tu lenguaje de programación favorito?</h2>
+  <form action="#" method="POST">
+    <label><input type="radio" name="lenguaje" value="HTML" required> HTML</label><br>
+    <label><input type="radio" name="lenguaje" value="CSS"> CSS</label><br>
+    <label><input type="radio" name="lenguaje" value="JavaScript"> JavaScript</label><br>
+    <label><input type="radio" name="lenguaje" value="Python"> Python</label><br><br>
+    <button type="submit">Votar</button>
+  </form>
+</article>
+
     </main>
 
     <aside class="sidebar">
