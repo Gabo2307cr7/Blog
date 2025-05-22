@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -140,39 +141,39 @@
     <main>
       <article>
         <h2>🌄 Primer artículo: Estructura y Componentes</h2>
-        <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+        <p><strong>Publicado el:</strong> <span id="fechaActual"></span></p>
         <p>Este es el primer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
       </article>
 
       <article>
-        <h2>📚 Segundo artículo: Servicios  y Aplicaciones de Internet</h2>
-        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
-        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
-      </article>
-
-     <article>
-        <h2>📚 Tercer artículo: Seguridad en Internet </h2>
-        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
-        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
-      </article>
-
-       <article>
-        <h2>📚 Cuarto articulo artículo: Nuevas tecnologias Emergentes</h2>
+        <h2>📚 Segundo artículo: Servicios y Aplicaciones de Internet</h2>
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
         <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
       </article>
 
       <article>
-  <h2>📊 Encuesta: ¿Cuál es tu lenguaje de programación favorito?</h2>
-  <form action="#" method="POST">
-    <label><input type="radio" name="lenguaje" value="HTML" required> HTML</label><br>
-    <label><input type="radio" name="lenguaje" value="CSS"> CSS</label><br>
-    <label><input type="radio" name="lenguaje" value="JavaScript"> JavaScript</label><br>
-    <label><input type="radio" name="lenguaje" value="Python"> Python</label><br><br>
-    <button type="submit">Votar</button>
-  </form>
-</article>
+        <h2>📚 Tercer artículo: Seguridad en Internet</h2>
+        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
+        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
+      </article>
 
+      <article>
+        <h2>📚 Cuarto artículo: Nuevas tecnologías Emergentes</h2>
+        <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
+        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
+      </article>
+
+      <article>
+        <h2>📊 Encuesta: ¿Cuál es tu lenguaje de programación favorito?</h2>
+        <form id="encuestaForm">
+          <label><input type="radio" name="lenguaje" value="HTML" required> HTML</label><br>
+          <label><input type="radio" name="lenguaje" value="CSS"> CSS</label><br>
+          <label><input type="radio" name="lenguaje" value="JavaScript"> JavaScript</label><br>
+          <label><input type="radio" name="lenguaje" value="Python"> Python</label><br><br>
+          <button type="submit">Votar</button>
+        </form>
+        <p id="resultadoEncuesta" style="margin-top: 10px; font-weight: bold;"></p>
+      </article>
     </main>
 
     <aside class="sidebar">
@@ -193,5 +194,27 @@
     <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- JavaScript al final del body -->
+  <script>
+    // Mostrar fecha actual para el primer artículo
+    document.getElementById("fechaActual").textContent = new Date().toLocaleDateString("es-ES", {
+      year: "numeric", month: "long", day: "numeric"
+    });
+
+    // Encuesta interactiva
+    document.getElementById('encuestaForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita que recargue la página
+      const seleccion = document.querySelector('input[name="lenguaje"]:checked');
+      const resultado = document.getElementById('resultadoEncuesta');
+
+      if (seleccion) {
+        resultado.textContent = `¡Gracias por votar! Elegiste: ${seleccion.value}`;
+      } else {
+        resultado.textContent = 'Por favor, selecciona una opción.';
+      }
+    });
+  </script>
+
 </body>
 </html>
+
