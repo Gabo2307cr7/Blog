@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -15,32 +15,39 @@
       margin: 0;
       padding: 0;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
-      background-color: #34495e;
+      background: linear-gradient(90deg, #2c3e50, #34495e);
       color: white;
       padding: 30px 20px;
       text-align: center;
+      animation: fadeIn 1s ease-out;
     }
 
     nav {
       background-color: #2c3e50;
       padding: 12px 0;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
       color: white;
-      margin: 0 12px;
+      margin: 0 15px;
       text-decoration: none;
       font-size: 1rem;
-      display: inline-block;
-      padding: 8px 5px;
+      padding: 8px 10px;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 4px;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #1abc9c;
+      color: white;
     }
 
     .container {
@@ -60,8 +67,17 @@
       background: white;
       padding: 20px;
       margin-bottom: 20px;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.6s forwards;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
     article h2 {
@@ -76,8 +92,9 @@
       flex: 1 1 35%;
       background-color: #ecf0f1;
       padding: 20px;
-      border-radius: 6px;
+      border-radius: 8px;
       height: fit-content;
+      animation: fadeIn 1.2s ease;
     }
 
     footer {
@@ -86,6 +103,38 @@
       text-align: center;
       padding: 15px 0;
       margin-top: 40px;
+    }
+
+    #btnScrollTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      display: none;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    #btnScrollTop:hover {
+      background-color: #16a085;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     @media (max-width: 768px) {
@@ -194,27 +243,16 @@
     <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- JavaScript al final del body -->
+  <!-- Botón para volver arriba -->
+  <button id="btnScrollTop" title="Volver arriba">↑</button>
+
+  <!-- Scripts -->
   <script>
-    // Mostrar fecha actual para el primer artículo
+    // Fecha actual en el primer artículo
     document.getElementById("fechaActual").textContent = new Date().toLocaleDateString("es-ES", {
       year: "numeric", month: "long", day: "numeric"
     });
 
     // Encuesta interactiva
     document.getElementById('encuestaForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Evita que recargue la página
-      const seleccion = document.querySelector('input[name="lenguaje"]:checked');
-      const resultado = document.getElementById('resultadoEncuesta');
-
-      if (seleccion) {
-        resultado.textContent = `¡Gracias por votar! Elegiste: ${seleccion.value}`;
-      } else {
-        resultado.textContent = 'Por favor, selecciona una opción.';
-      }
-    });
-  </script>
-
-</body>
-</html>
-
+      event
