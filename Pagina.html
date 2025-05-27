@@ -206,19 +206,19 @@
       </article>
 
       <article>
-        <h2><a href="Nuevas_Tecnologias_Emergentes.html">📚 Segundo artículo: Las Nuevas Tecnologias Emergentes</h2>
+        <h2><a href="Nuevas_Tecnologias_Emergentes.html">📚 Segundo artículo: Las Nuevas Tecnologias Emergentes</a></h2>
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
         <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
       </article>
 
       <article>
-        <h2><a href="Servicios_aplicaciones_internet.html">🌄 Tercer artículo: Servicios de aplicaciones en internet</h2>
+        <h2><a href="Servicios_aplicaciones_internet.html">🌄 Tercer artículo: Servicios de aplicaciones en internet</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
         <p>Este es el tercer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
       </article>
 
       <article>
-        <h2><a href="Seguridad_Internet.html">🌄 Cuarto artículo: Seguridad en Internet</h2>
+        <h2><a href="Seguridad_Internet.html">🌄 Cuarto artículo: Seguridad en Internet</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
         <p>Este es el cuarto artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
       </article>
