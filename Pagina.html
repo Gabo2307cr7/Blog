@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -39,6 +40,44 @@
     }
 
     nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* NUEVO: estilo para la parte superior con "Sobre mí" y "Categorías" */
+    .top-info {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ecf0f1;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+    }
+
+    .top-info section {
+      max-width: 500px;
+      margin: 10px;
+    }
+
+    .top-info h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .top-info ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .top-info li {
+      margin: 6px 0;
+    }
+
+    .top-info a {
+      text-decoration: none;
+      color: #1abc9c;
+      font-weight: bold;
+    }
+
+    .top-info a:hover {
       text-decoration: underline;
     }
 
@@ -116,8 +155,9 @@
         font-size: 1.2em;
       }
 
-      .sidebar h3 {
-        font-size: 1.1em;
+      .top-info section {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -125,7 +165,7 @@
 <body>
 
   <header>
-    <h1>Blog Fundamento Tecnología de la Información</h1>
+    <h1>Origen y Evolución</h1>
     <p>Historias y artículos interesantes</p>
   </header>
 
@@ -136,10 +176,31 @@
     <a href="#">Contacto</a>
   </nav>
 
+  <!-- NUEVO BLOQUE DE CATEGORÍAS Y SOBRE MÍ EN LA PARTE SUPERIOR -->
+  <div class="top-info">
+    <section class="about-top">
+      <h3>Sobre mí</h3>
+      <p>
+        Primera página web de la materia Fundamentos de la Tecnología y la Información.<br>
+        Universidad Autónoma de Guerrero, Facultad de Ingeniería en Computación.
+      </p>
+    </section>
+
+    <section class="categories-top">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="Estructura_Componentes.html">Estructura y Componentes</a></li>
+        <li><a href="Servicios_aplicaciones_internet.html">Servicios y aplicaciones de Internet</a></li>
+        <li><a href="Seguridad_Internet.html">Seguridad en Internet</a></li>
+        <li><a href="Nuevas_Tecnologias_Emergentes.html">Nuevas Tecnologías Emergentes</a></li>
+      </ul>
+    </section>
+  </div>
+
   <div class="container">
     <main>
       <article>
-        <h2>🌄 Primer artículo del blog</h2>
+        <h2><a href="Estructura_Componentes.html">🌄 Primer artículo: Estructura y Componentes</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
         <p>Este es el primer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
       </article>
@@ -149,19 +210,24 @@
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
         <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
       </article>
+
+      <article>
+        <h2>🌄 Tercer artículo del blog</h2>
+        <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+        <p>Este es el tercer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
+      </article>
+
+      <article>
+        <h2>🌄 Cuarto artículo del blog</h2>
+        <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+        <p>Este es el cuarto artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
+      </article>
     </main>
 
+    <!-- Puedes eliminar este sidebar si ya no lo necesitas -->
     <aside class="sidebar">
-      <h3>Sobre mí</h3>
-      <p>Soy un apasionado por la escritura, la tecnología y el diseño. Este blog es un espacio para compartir lo que aprendo cada día.</p>
-      <hr>
-      <h3>Categorías</h3>
-      <ul>
-        <li>Tecnología</li>
-        <li>Reflexiones</li>
-        <li>Diseño web</li>
-        <li>Vida personal</li>
-      </ul>
+      <h3>Sidebar (opcional)</h3>
+      <p>Este espacio puede utilizarse para otros enlaces, banners o recursos relacionados.</p>
     </aside>
   </div>
 
