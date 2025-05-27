@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<a href="Pagina.html">← Volver al blog</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura y Componentes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #34495e;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: white;
+      background-color: #1abc9c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #16a085;
+    }
+
+    p, ul {
+      margin-bottom: 1em;
+    }
+
+    img.article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    img.article-img:hover {
+      transform: scale(1.02);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="img/TIC.PNG" alt="Estructura de información" class="article-img">
+
+    <h1>🌄 Estructura y Componentes</h1>
+    <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+
+    <p>
+      Este artículo explica la estructura general de los sistemas de información, incluyendo componentes como:
+    </p>
+  <nav class="mini-menu">
+  <ul>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#datos">Datos</a></li>
+    <li><a href="#procesos">Procesos</a></li>
+    <li><a href="#personas">Personas</a></li>
+  </ul>
+</nav>
+
+<style>
+  .mini-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 30px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .mini-menu a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .mini-menu a:hover,
+  .mini-menu a:focus {
+    background-color: #16a085;
+    transform: scale(1.05);
+  }
+
+  /* Para dispositivos pequeños */
+  @media (max-width: 480px) {
+    .mini-menu ul {
+      gap: 6px;
+    }
+    .mini-menu a {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+    }
+  }
+</style>
+
+  <h2 id="hardware">🔌 Hardware</h2>
+<p>
+  El hardware se refiere a todos los componentes físicos de un sistema informático. Incluye dispositivos como el monitor, teclado, procesador, memoria RAM, disco duro, entre otros. Es la parte tangible del sistema y sin ella, el software no podría ejecutarse.
+</p>
+
+<h2 id="software">💾 Software</h2>
+<p>
+  El software es el conjunto de programas, instrucciones y datos que hacen funcionar al hardware. Se divide en software de sistema (como sistemas operativos) y software de aplicación (como navegadores, editores de texto, etc.).
+</p>
+
+<h2 id="datos">📊 Datos</h2>
+<p>
+  Los datos son la materia prima de los sistemas de información. Se almacenan, procesan y transforman en información útil que ayuda a la toma de decisiones. Pueden ser textos, números, imágenes o cualquier otro tipo de entrada digital.
+</p>
+
+<h2 id="procesos">🔄 Procesos</h2>
+<p>
+  Los procesos son las reglas y procedimientos que definen cómo se utilizan el hardware, el software y los datos. Incluyen desde el flujo de trabajo hasta la automatización de tareas para hacer más eficiente el uso del sistema.
+</p>
+
+<h2 id="personas">👩‍💻 Personas</h2>
+<p>
+  Las personas son los usuarios que interactúan con el sistema. Pueden ser técnicos, administradores o usuarios finales. Son fundamentales, ya que toman decisiones y ejecutan tareas utilizando la información generada.
+</p>
+
+  </div>
+
+</body>
+</html>
