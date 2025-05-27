@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -227,11 +226,6 @@
 
   <footer>
     <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
-</html>
-
   </footer>
 
 </body>
