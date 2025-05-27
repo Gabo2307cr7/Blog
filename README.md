@@ -170,7 +170,7 @@
 
   <nav>
     <a href="#">Inicio</a>
-    <a href="#">Categorías</a>
+    <a href="#Categoria">Categorías</a>
     <a href="#">Sobre mí</a>
     <a href="#">Contacto</a>
   </nav>
@@ -186,7 +186,7 @@
     </section>
 
     <section class="categories-top">
-      <h3>Categorías</h3>
+      <h3 id=Categoria>Categorías</h3>
       <ul>
         <li><a href="Estructura_Componentes.html">Estructura y Componentes</a></li>
         <li><a href="Servicios_aplicaciones_internet.html">Servicios y aplicaciones de Internet</a></li>
