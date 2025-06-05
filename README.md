@@ -1,79 +1,96 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Fundamento Tecnología de la Información</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Fundamentos de Tecnología</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background: #f1f2f6;
+      color: #2d3436;
     }
 
     header {
-      background-color: #34495e;
+      background: linear-gradient(135deg, #1e272e, #34495e);
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #dcdde1;
     }
 
     nav {
       background-color: #2c3e50;
-      padding: 12px 0;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 10px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: white;
-      margin: 0 12px;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 1rem;
-      display: inline-block;
-      padding: 8px 5px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.2s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #1abc9c;
+      transform: scale(1.05);
     }
 
-    /* NUEVO: estilo para la parte superior con "Sobre mí" y "Categorías" */
     .top-info {
       display: flex;
-      justify-content: space-around;
-      background-color: #ecf0f1;
-      padding: 20px 10px;
       flex-wrap: wrap;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 30px 20px;
+      gap: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .top-info section {
       max-width: 500px;
-      margin: 10px;
+      flex: 1 1 300px;
     }
 
     .top-info h3 {
       margin-top: 0;
-      color: #2c3e50;
+      color: #0984e3;
     }
 
     .top-info ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
     }
 
     .top-info li {
-      margin: 6px 0;
+      margin: 8px 0;
     }
 
     .top-info a {
+      color: #00b894;
       text-decoration: none;
-      color: #1abc9c;
-      font-weight: bold;
     }
 
     .top-info a:hover {
@@ -81,82 +98,68 @@
     }
 
     .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
       gap: 20px;
     }
 
     main {
-      flex: 1 1 60%;
+      flex: 1 1 65%;
     }
 
     article {
       background: white;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      margin-bottom: 25px;
+      transition: transform 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-3px);
     }
 
     article h2 {
-      margin-bottom: 10px;
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #0984e3;
+    }
+
+    article h2 a {
+      text-decoration: none;
+      color: inherit;
     }
 
     article p {
       line-height: 1.6;
     }
 
-    .sidebar {
-      flex: 1 1 35%;
-      background-color: #ecf0f1;
-      padding: 20px;
-      border-radius: 6px;
-      height: fit-content;
-    }
-
     footer {
-      background-color: #34495e;
-      color: white;
+      background-color: #2d3436;
+      color: #dfe6e9;
       text-align: center;
-      padding: 15px 0;
+      padding: 20px;
       margin-top: 40px;
     }
 
     @media (max-width: 768px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      .container {
+      nav {
         flex-direction: column;
-        padding: 0 15px;
+        gap: 10px;
+        padding: 20px;
       }
 
-      .sidebar {
-        margin-top: 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.5em;
+      .top-info {
+        flex-direction: column;
+        align-items: center;
       }
 
-      nav a {
-        font-size: 1em;
-      }
-
-      article h2 {
-        font-size: 1.2em;
-      }
-
-      .top-info section {
-        width: 100%;
-        text-align: center;
+      main {
+        flex: 1 1 100%;
       }
     }
   </style>
@@ -164,8 +167,8 @@
 <body>
 
   <header>
-    <h1>Origen y Evolución</h1>
-    <p>Historias y artículos interesantes</p>
+    <h1>Blog de Tecnología e Información</h1>
+    <p>Conociendo los fundamentos, el presente y el futuro de la tecnología</p>
   </header>
 
   <nav>
@@ -175,21 +178,17 @@
     <a href="#">Contacto</a>
   </nav>
 
-  <!-- NUEVO BLOQUE DE CATEGORÍAS Y SOBRE MÍ EN LA PARTE SUPERIOR -->
   <div class="top-info">
     <section class="about-top">
       <h3>Sobre mí</h3>
-      <p>
-        Primera página web de la materia Fundamentos de la Tecnología y la Información.<br>
-        Universidad Autónoma de Guerrero, Facultad de Ingeniería en Computación.
-      </p>
+      <p>Esta es la primera página web creada para la materia de Fundamentos de Tecnología de la Información. Universidad Autónoma de Guerrero, Facultad de Ingeniería en Computación.</p>
     </section>
 
     <section class="categories-top">
-      <h3 id=Categoria>Categorías</h3>
+      <h3 id="Categoria">Categorías</h3>
       <ul>
         <li><a href="Estructura_Componentes.html">Estructura y Componentes</a></li>
-        <li><a href="Servicios_aplicaciones_internet.html">Servicios y aplicaciones de Internet</a></li>
+        <li><a href="Servicios_aplicaciones_internet.html">Servicios y Aplicaciones de Internet</a></li>
         <li><a href="Seguridad_Internet.html">Seguridad en Internet</a></li>
         <li><a href="Nuevas_Tecnologias_Emergentes.html">Nuevas Tecnologías Emergentes</a></li>
       </ul>
@@ -199,33 +198,33 @@
   <div class="container">
     <main>
       <article>
-        <h2><a href="Estructura_Componentes.html">🌄 Primer artículo: Estructura y Componentes</a></h2>
+        <h2><a href="Estructura_Componentes.html">🌐 Estructura y Componentes</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
-        <p>Este es el primer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
+        <p>Descubre cómo está conformado Internet: su infraestructura, protocolos y componentes esenciales. Ideal para comenzar en el mundo digital.</p>
       </article>
 
       <article>
-        <h2><a href="Nuevas_Tecnologias_Emergentes.html">📚 Segundo artículo: Las Nuevas Tecnologias Emergentes</a></h2>
+        <h2><a href="Nuevas_Tecnologias_Emergentes.html">🚀 Nuevas Tecnologías Emergentes</a></h2>
         <p><strong>Publicado el:</strong> 20 de mayo de 2025</p>
-        <p>HTML es el lenguaje de marcado principal para la creación de páginas web. Con él puedes estructurar textos, imágenes, enlaces y mucho más.</p>
+        <p>Conoce las tecnologías que están revolucionando el mundo: inteligencia artificial, blockchain, computación cuántica y más.</p>
       </article>
 
       <article>
-        <h2><a href="Servicios_aplicaciones_internet.html">🌄 Tercer artículo: Servicios de aplicaciones en internet</a></h2>
+        <h2><a href="Servicios_aplicaciones_internet.html">💻 Servicios y Aplicaciones de Internet</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
-        <p>Este es el tercer artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
+        <p>Desde el correo electrónico hasta las redes sociales, explora cómo Internet impacta nuestras vidas diarias con aplicaciones útiles.</p>
       </article>
 
       <article>
-        <h2><a href="Seguridad_Internet.html">🌄 Cuarto artículo: Seguridad en Internet</a></h2>
+        <h2><a href="Seguridad_Internet.html">🔒 Seguridad en Internet</a></h2>
         <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
-        <p>Este es el cuarto artículo del blog. Aquí puedes compartir tus pensamientos, experiencias o contenido informativo para tus lectores.</p>
+        <p>Aprende sobre ciberseguridad, amenazas comunes y cómo protegerte en la red mientras navegas o compartes información.</p>
       </article>
     </main>
   </div>
 
   <footer>
-    <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Blog de Tecnología. Universidad Autónoma de Guerrero - Facultad de Ingeniería en Computación.</p>
   </footer>
 
 </body>
