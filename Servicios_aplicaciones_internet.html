@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<a href="Pagina.html">← Volver al blog</a>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios de Aplicaciones en Internet</title>
@@ -10,27 +9,26 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
+      background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
       color: #2c3e50;
     }
 
     .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background-color:#f5f0f0;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1s ease-in-out;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
-      color: #34495e;
+    h1, h2 {
+      color: #1abc9c;
     }
 
     a {
       display: inline-block;
-      margin-top: 20px;
+      margin-bottom: 20px;
       color: white;
       background-color: #1abc9c;
       padding: 10px 20px;
@@ -43,141 +41,138 @@
       background-color: #16a085;
     }
 
-    p, ul {
-      margin-bottom: 1em;
-    }
-
-    img.article-img {
+    .article-img {
       width: 100%;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    nav.mini-menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    nav.mini-menu a {
+      background: #1abc9c;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav.mini-menu a:hover {
+      background-color: #16a085;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
       border-radius: 8px;
-      margin-bottom: 20px;
-      transition: transform 0.4s ease;
     }
 
-    img.article-img:hover {
-      transform: scale(1.02);
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
+    #disqus_thread {
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <a href="Pagina.html">← Volver al blog</a>
     <img src="img/TIC.PNG" alt="Estructura de información" class="article-img">
 
     <h1>Servicios de Aplicaciones en Internet</h1>
     <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
 
+    <nav class="mini-menu">
+      <ul>
+        <li><a href="#SAI">SAI</a></li>
+        <li><a href="#Servicios a la comunicacion">Comunicación</a></li>
+        <li><a href="#Servicios Accesso A la informacion">Acceso a la información</a></li>
+        <li><a href="#Servicios de transferencia">Transferencia</a></li>
+      </ul>
+    </nav>
+
+    <h2>¿Qué Son Los Servicios de Aplicación en Internet?</h2>
     <p>
-      Este artículo explica la estructura general de los sistemas de información, incluyendo componentes como:
-    </p>
-  <nav class="mini-menu">
-  <ul>
-    <li><a href="#SAI">SAI</a></li>
-    <li><a href="#Servicios a la comunicacion">Servicios a la comunicacion</a></li>
-    <li><a href="#Servicios Accesso A la informacion">Servicios Accesso A la informacion</a></li>
-    <li><a href="#Servicios de transferencia">Servicios de transferencia</a></li>
-  </ul>
-</nav>
-
-<style>
-  .mini-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 30px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .mini-menu a {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #1abc9c;
-    color: black;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .mini-menu a:hover,
-  .mini-menu a:focus {
-    background-color: #16a085;
-    transform: scale(1.05);
-  }
-
-  /* Para dispositivos pequeños */
-  @media (max-width: 480px) {
-    .mini-menu ul {
-      gap: 6px;
-    }
-    .mini-menu a {
-      font-size: 0.75rem;
-      padding: 5px 10px;
-    }
-  }
-</style>
-
-<h2>¿Qué Son Los Servicios de Aplicacion en Internet</h2>
-    <p>
-    Los servicios de aplicaciones en Internet son programas que se ejecutan en servidores web y permiten a los usuarios hacer cosas como enviar correos, editar documentos, almacenar archivos o comunicarse, todo desde un navegador y sin instalar nada.
+      Los servicios de aplicaciones en Internet son programas que se ejecutan en servidores web y permiten a los usuarios hacer cosas como enviar correos, editar documentos, almacenar archivos o comunicarse, todo desde un navegador y sin instalar nada.
     </p>
 
-   <h2>Caracteristicas principales</h2>
-   <ul> 
-     <li>Accesibles desde el navegador (no requieren instalación)</li>
-    <li>Multiusuario (pueden ser usados por muchas personas al mismo tiempo)</li>
-    <li>Multiplataforma (funcionan en PC, tabletas, móviles)</li>
-    <li>Actualizaciones automáticas (el usuario no necesita hacer nada)</li>
-    <li>Basados en la nube (los datos se almacenan en servidores remotos)</ul>
-  
-                                                                                      <h2> Clasificicacion </h2>
-      <p>La clasificación de los servicios de aplicaciones en Internet se basa en la función que cumplen: Servicios de comunicación, Accesso a la informacion, Servicios de transferencia. ofrece soluciones específicas para facilitar actividades cotidianas a través de la web.</p>
+    <h2>Características principales</h2>
+    <ul>
+      <li>Accesibles desde el navegador (no requieren instalación)</li>
+      <li>Multiusuario (pueden ser usados por muchas personas al mismo tiempo)</li>
+      <li>Multiplataforma (funcionan en PC, tabletas, móviles)</li>
+      <li>Actualizaciones automáticas (el usuario no necesita hacer nada)</li>
+      <li>Basados en la nube (los datos se almacenan en servidores remotos)</li>
+    </ul>
 
-<h2 id="Servicios a la comunicacion"> Servicios a la comunicacion</h2>
-<p>
-  Los servicios de comunicación son aquellos que facilitan el intercambio de información, mensajes y contenido, utilizando diferentes medios tecnológicos y plataformas. Estos servicios abarcan desde la telefonía tradicional hasta la comunicación digital y multimedia. 
-</p>
+    <h2>Clasificación</h2>
+    <p>
+      La clasificación de los servicios de aplicaciones en Internet se basa en la función que cumplen: Servicios de comunicación, Acceso a la información, Servicios de transferencia. Ofrecen soluciones específicas para facilitar actividades cotidianas a través de la web.
+    </p>
 
-<h2 id="Servicios Accesso A la informacion">📊 Servicio Accesso a la informacion</h2>
-<p>
-  El servicio de acceso a la información es el derecho que tienen todas las personas a solicitar y obtener información pública de manera gratuita, sin tener que justificar el uso que le darán a la información. 
-</p>
+    <h2 id="Servicios a la comunicacion">📞 Servicios a la comunicación</h2>
+    <p>
+      Son aquellos que facilitan el intercambio de información, mensajes y contenido, utilizando diferentes medios tecnológicos y plataformas. Abarcan desde la telefonía tradicional hasta la comunicación digital y multimedia.
+    </p>
 
-<h2 id="Servicios de transferencia">🔄 Servicios de tranferencia </h2>
-<p>
-  acción de mover algo de un lugar a otro. Puede referirse a la transferencia de dinero, datos, información, o incluso de personas. En el contexto bancario, por ejemplo, una transferencia es una orden que se le da al banco para enviar dinero de una cuenta a otra. En el contexto de datos, puede referirse al movimiento de archivos o información entre diferentes sistemas, como nubes o servidores. 
-</p>
+    <h2 id="Servicios Accesso A la informacion">📊 Acceso a la información</h2>
+    <p>
+      Es el derecho que tienen todas las personas a solicitar y obtener información pública de manera gratuita, sin justificar el uso que darán a la misma.
+    </p>
 
-<h2 id="SAI">SAI</h2>
-<p> ¿Que es el SAI?: -El SAI (Sistema de Alimentación Ininterrumpida) es un dispositivo que proporciona energía eléctrica de respaldo de forma inmediata cuando ocurre un corte de luz o una falla en el suministro eléctrico. </p>
-    <p>¿Para que Sirve?</p>
-    <p>Evita que equipos electrónicos se apaguen bruscamente. Protege sistemas críticos (como en hospitales, centros de datos, oficinas o industrias).
-    Permite continuar operando durante un corte de energía, al menos por un tiempo, gracias a sus baterías internas</p>
-    <p>¿Como Funciona?</p>
-    <p>Cuando la electricidad falla, el SAI entra en acción automáticamente y suministra energía a los equipos conectados usando sus baterías. Esto da tiempo para:
-      Seguir trabajando. Apagar correctamente los equipos. Esperar a que se restablezca la energía</p>
+    <h2 id="Servicios de transferencia">🔄 Servicios de transferencia</h2>
+    <p>
+      Acción de mover algo de un lugar a otro. Puede referirse a dinero, datos, información o personas. En contexto digital, implica mover archivos o información entre diferentes sistemas, como nubes o servidores.
+    </p>
+
+    <h2 id="SAI">⚡ SAI (Sistema de Alimentación Ininterrumpida)</h2>
+    <p>
+      El SAI es un dispositivo que proporciona energía eléctrica de respaldo cuando ocurre un corte o falla en el suministro eléctrico.
+    </p>
+    <p><strong>¿Para qué sirve?</strong></p>
+    <p>
+      Evita que los equipos se apaguen bruscamente, protege sistemas críticos y permite continuar operando por un tiempo gracias a sus baterías internas.
+    </p>
+    <p><strong>¿Cómo funciona?</strong></p>
+    <p>
+      Cuando falla la electricidad, el SAI entra en acción automáticamente y suministra energía a los equipos conectados usando sus baterías, permitiendo seguir trabajando o apagar correctamente los equipos.
+    </p>
+
+    <!-- 📋 Encuesta -->
+    <h2>📋 Encuesta</h2>
+    <p>Responde esta breve encuesta para saber tu opinión:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSMzhgh2iX3zQimB_0YlyCSvhDmaJFS_s1zAsWvhJZa-AFcA/viewform?embedded=true" width="640" height="1310" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+
+    </iframe>
+
+    <!-- 💬 Comentarios -->
+    <h2>💬 Comentarios</h2>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.pathname;
+      };
+
+      (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://TU-NOMBRE-DE-SITIO.disqus.com/embed.js'; // REEMPLAZA esto
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Activa JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios</a>.</noscript>
+
   </div>
 
 </body>
