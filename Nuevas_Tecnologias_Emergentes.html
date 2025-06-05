@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<a href="Pagina.html">← Volver al blog</a>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuevas tecnologias Emergentes</title>
+  <title>Nuevas Tecnologías Emergentes</title>
   <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --container-bg: #1e272e;
+      --text-color: #dfe6e9;
+      --title-color: #00cec9;
+      --accent: #00cec9;
+      --accent-hover: #0984e3;
+    }
+
+    body.light {
+      --bg-gradient: linear-gradient(135deg, #f0f0f0, #ffffff);
+      --container-bg: #ffffff;
+      --text-color: #2d3436;
+      --title-color: #0984e3;
+      --accent: #0984e3;
+      --accent-hover: #00cec9;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
-      color: #2c3e50;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      transition: background 0.5s ease, color 0.5s ease;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 50px auto;
-      background-color: #ffffff;
+      background-color: var(--container-bg);
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       animation: fadeIn 1s ease-in-out;
     }
 
     h1 {
-      color: #34495e;
+      color: var(--title-color);
+      font-size: 2em;
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: var(--title-color);
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
     }
 
     a {
       display: inline-block;
-      margin-top: 20px;
+      margin: 20px 0;
       color: white;
-      background-color: #1abc9c;
+      background-color: var(--accent);
       padding: 10px 20px;
       border-radius: 6px;
       text-decoration: none;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     a:hover {
-      background-color: #16a085;
+      background-color: var(--accent-hover);
     }
 
     p, ul {
-      margin-bottom: 1em;
+      margin-bottom: 1.2em;
+      line-height: 1.6;
     }
 
     img.article-img {
@@ -55,7 +82,54 @@
     }
 
     img.article-img:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
+    }
+
+    nav.mini-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .mini-menu a {
+      padding: 8px 16px;
+      background-color: var(--accent);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 20px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 206, 201, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .mini-menu a:hover,
+    .mini-menu a:focus {
+      background-color: var(--accent-hover);
+      transform: scale(1.05);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      background: var(--accent-hover);
     }
 
     @keyframes fadeIn {
@@ -74,95 +148,109 @@
         margin: 20px;
         padding: 20px;
       }
+
+      .mini-menu a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
     }
   </style>
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
 
   <div class="container">
+    <a href="Pagina.html">← Volver al blog</a>
     <img src="img/TIC.PNG" alt="Estructura de información" class="article-img">
 
-    <h1>🌄 Nuevas tecnologias Emergentes</h1>
+    <h1>Nuevas Tecnologías Emergentes</h1>
     <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+    <nav class="mini-menu">
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#datos">Datos</a></li>
+        <li><a href="#procesos">Procesos</a></li>
+        <li><a href="#personas">Personas</a></li>
+      </ul>
+    </nav>
 
+    <h2>Introducción a las Tecnologías Emergentes</h2>
+
+    <h3>1.1 ¿Qué son las Tecnologías Emergentes?</h3>
+    <p>Las tecnologías emergentes son innovaciones con alto potencial disruptivo que aún no han alcanzado su madurez. <div> caracterizan por ofrecer soluciones significativamente superiores a las tecnologías existentes y por su capacidad de generar cambios estructurales en contextos socioeconómicos.</div> Su adopción es relativa al entorno; una tecnología consolidada en un país puede ser emergente en otro. Según el College of Information Technology (Universidad de Dubái), incluyen desarrollos como IA, biotecnología, robótica avanzada y comunicación máquina-a-máquina, con impacto proyectado en los próximos 5 a 10 años.</p>
+
+    <p>No se trata simplemente de su novedad cronológica; el concepto de "tecnología emergente" va más allá de ser algo recién inventado. Puede ser considerada emergente en un contexto particular, como un dominio o una región geográfica, mientras que ya está establecida en otro lugar.</p>
+
+    <p>El College of Information Technology de la Universidad de Dubái las definió en 2013 como "nuevas tecnologías que se están desarrollando actualmente o se desarrollarán en los próximos cinco a diez años, y que alterarán sustancialmente el entorno empresarial y social".</p>
+
+    <h3>1.2 ¿Por qué son Cruciales para el Futuro?</h3>
+    <p>Las tecnologías emergentes son pilares fundamentales para la transformación digital. Permiten abordar problemáticas que requieren soluciones disruptivas e innovadoras.</p>
+
+    <p>Estas tecnologías representan una ventaja competitiva temprana, pero con el tiempo, lo que hoy es una ventaja se volverá una norma. Por ejemplo, se espera que el mercado de la computación cuántica alcance los 65 mil millones de dólares para 2030. La preparación estratégica y la formación del personal son esenciales para aprovechar estas oportunidades.</p>
+
+    <h3>2. Tecnologías Emergentes Clave para 2025</h3>
+    <p>El año 2025 será clave para muchas tecnologías según expertos de Gartner, MIT, Deloitte y PwC. Aquí destacan algunas:</p>
+
+    <h3>2.1 Inteligencia Artificial (IA) y Agentes Inteligentes</h3>
+    <p>La Inteligencia Artificial (IA) está en el epicentro de la transformación tecnológica, revolucionando la forma en que se ejecutan tareas que tradicionalmente requerían inteligencia humana. Para 2025, se proyecta que el 82% de las empresas estarán explorando o ya habrán implementado la IA en sus operaciones.</p>
+
+    <h3>2.1.1 Estado Actual y Aplicaciones</h3>
+    <p>La IA generativa puede crear texto, imágenes, audio y video. Se utiliza en marketing, diseño de productos, atención al cliente y personalización de contenido.</p>
+
+    <div>
+      Esta tecnología ha reducido costos y mejorado procesos. Sin embargo, aún requiere talento humano y una implementación cuidadosa.
+    </div>
+
+    <div>
+      Una evolución clave son los agentes de IA, capaces de tomar decisiones, conectarse con bases de datos y automatizar procesos de negocio. Se espera que estos reemplacen aplicaciones tradicionales.
+    </div>
+    <h3>2.1.2. Impacto en Industrias y Negocios</h3>
     <p>
-      Este artículo explica la estructura general de los sistemas de información, incluyendo componentes como:
+      La inteligencia artificial (IA) está transformando los procesos productivos al optimizar la toma de decisiones mediante el análisis masivo de datos y el reconocimiento de patrones. En la industria, es clave para el mantenimiento predictivo, el control de calidad con visión computacional y la detección de oportunidades comerciales en tiempo real.
+      <div></div> Al empleo, la IA no eliminará puestos de forma inmediata, sino que sustituirá tareas específicas dentro de los roles existentes, alterando sus competencias requeridas. Se proyecta que, hacia 2025, los costos asociados a la IA serán casi nulos, habilitando su adopción generalizada en todos los niveles empresariales.
     </p>
-  <nav class="mini-menu">
-  <ul>
-    <li><a href="#hardware">Hardware</a></li>
-    <li><a href="#software">Software</a></li>
-    <li><a href="#datos">Datos</a></li>
-    <li><a href="#procesos">Procesos</a></li>
-    <li><a href="#personas">Personas</a></li>
-  </ul>
-</nav>
+    <h3> 2.1.3. Computación Cuántica</h3>
+    <p> La computación cuántica utiliza qubits para procesar información con una capacidad exponencial frente a sistemas clásicos. En 2025 se espera que sea una tecnología clave en finanzas, simulación molecular, logística avanzada y aprendizaje automático. Grandes avances incluyen chips escalables como el Willow de Google y herramientas como Qiskit 1.0 de IBM.</p>
+  <ol>Aplicaciones destacadas:</ol>
 
-<style>
-  .mini-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 30px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+<li>Finanzas: Optimización de portafolios y simulación de riesgos.</li>
 
-  .mini-menu a {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #1abc9c;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+<li>Farmacéutica: Simulación de moléculas para descubrimiento de fármacos.</li>
 
-  .mini-menu a:hover,
-  .mini-menu a:focus {
-    background-color: #16a085;
-    transform: scale(1.05);
-  }
+<li>Logística: Optimización de cadenas de suministro.</li>
 
-  /* Para dispositivos pequeños */
-  @media (max-width: 480px) {
-    .mini-menu ul {
-      gap: 6px;
-    }
-    .mini-menu a {
-      font-size: 0.75rem;
-      padding: 5px 10px;
-    }
-  }
-</style>
+<lI>IA: Modelos más potentes.</lI>
 
-<h2>>Introducción a las Tecnologías Emergentes</h2
+<li>Ciberseguridad: Previsión de vulnerabilidades futuras.</li>
 
-  <h3>1.1. ¿Qué son las Tecnologías Emergentes?</h3>
-<p>Las tecnologías emergentes se definen como innovaciones que ofrecen mejoras significativas frente a soluciones tradicionales, pero que aún no han alcanzado su máximo nivel de madurez y se encuentran en vías de desarrollo. Su característica distintiva radica en su capacidad para responder de maneras diferentes a problemas complejos que afronta la sociedad actual. No se trata simplemente de su novedad cronológica; el concepto de "tecnología emergente" va más allá de ser algo recién inventado.   
+<h3>2.1.4 Criptografía Post-Cuántica (PQC)</h3>
+    <p>Los computadores cuánticos romperán algoritmos clásicos como RSA y ECC. La PQC surge como defensa, desarrollando algoritmos resistentes a ataques cuánticos (ej.: CRYSTALS-Kyber y Dilithium). El riesgo de “Harvest Now, Decrypt Later” exige migrar ya a nuevos estándares.</p>
+    <div>
+      <h4>Estrategias recomendadas:</h4>
 
-Una tecnología puede ser considerada emergente en un contexto particular, como un dominio o una región geográfica, mientras que ya está establecida en otro lugar. Por ejemplo, una tecnología que es común en países desarrollados podría ser disruptiva y, por lo tanto, "emergente" en países en vías de desarrollo. Esta relatividad subraya que el verdadero valor de una tecnología emergente no reside únicamente en su "novedad", sino en su capacidad de provocar un "cambio radical" en el entorno empresarial y social donde se implementa. El College of Information Technology de la Universidad de Dubái las definió en 2013 como "nuevas tecnologías que se están desarrollando actualmente o se desarrollarán en los próximos cinco a diez años, y que alterarán sustancialmente el entorno empresarial y social". Estas incluyen tecnologías de información, comunicación inalámbrica de datos, comunicación hombre a máquina, impresión bajo demanda, biotecnologías y robótica avanzada. </p>  
+<li>Inventario de datos críticos (>10 años de vida útil).</li>
+<li>Pruebas piloto con algoritmos PQC.</li>
+<li>Capacitación en ciberseguridad cuántica.</li>
+<li>Alianzas con proveedores como Google, Microsoft y Sectigo.</li>
 
-<h3>>1.2. Por qué son Cruciales para el Futuro</h3
-<p>Las tecnologías emergentes son pilares fundamentales para la transformación digital y el progreso. Permiten abordar problemáticas, objetivos y necesidades que requieren soluciones disruptivas e innovadoras. Sin embargo, su mera adopción no garantiza la transformación digital; el éxito radica en que su implementación esté impulsada por una necesidad o un reto claro de la entidad. Un enfoque centrado en la necesidad ayuda a evitar la experimentación con tecnologías que no generen mejoras tangibles en la creación de valor, como la habilitación de servicios digitales de confianza, la toma de decisiones basada en datos o el empoderamiento ciudadano.   
+<h3>3. Energías Limpias y Almacenamiento Eficiente</h3>
+<h4>Tecnologías Energéticas Sostenibles</h4>
+<p>El crecimiento acelerado de la generación renovable (solar, eólica) se combina con tecnologías emergentes como IoT energético, gemelos digitales y nanomateriales. Estas soluciones permiten eficiencia energética, descarbonización y mejor almacenamiento.</p>
 
-Estas tecnologías representan una oportunidad para obtener una ventaja competitiva temprana. No obstante, se prevé que, con el tiempo, lo que hoy es una ventaja se convertirá en la norma. Por ejemplo, el mercado de la computación cuántica se proyecta en aproximadamente 65 mil millones de dólares para 2030, con una tasa de crecimiento anual compuesta (CAGR) superior al 30% , lo que demuestra la magnitud de la inversión global en estas áreas. La preparación estratégica y la formación de los empleados para aplicar estas tecnologías a nuevos y existentes desafíos empresariales son esenciales para asegurar esta ventaja y mantenerse relevantes en un mercado en constante evolución. Las organizaciones que no se adapten a estas innovaciones corren el riesgo de quedarse atrás en la carrera por la competitividad.</p>
-
-<h3>2. Tecnologías Emergentes Clave para 2025</h3>
-<p>El año 2025 se perfila como un punto de inflexión para la consolidación y el impacto de varias tecnologías. Diversos expertos y consultoras como Gartner, MIT Technology Review, Deloitte y PwC han identificado las tendencias más relevantes que marcarán el rumbo de la innovación.</p>
-
-<h3>2.1. Inteligencia Artificial (IA) y Agentes Inteligentes</h3>
-<p>La Inteligencia Artificial (IA) está en el epicentro de la transformación tecnológica, revolucionando la forma en que se ejecutan tareas que tradicionalmente requerían inteligencia humana. Para 2025, se proyecta que el 82% de las empresas estarán explorando o ya habrán implementado la IA en sus operaciones</p>.   
-
-<h3>2.1.1. Estado Actual y Aplicaciones</h3>
-<p></p>La IA generativa, una de las ramas más destacadas, se caracteriza por su capacidad para crear nuevas instancias de datos, abarcando texto, imágenes, audio y video, a partir de la información existente. <div>>Esta capacidad está impulsando la creatividad y la innovación en múltiples dominios. Sus aplicaciones son vastas e incluyen la creación automatizada de contenido, el diseño de productos, la optimización de la experiencia del cliente y la personalización masiva.</div> <div>Por ejemplo, se utiliza para elaborar correos electrónicos, mensajes, chatbots y personalizar imágenes o infografías. Las empresas de alto rendimiento ya perciben un valor significativo de la IA generativa en la innovación de productos y servicios. En el sector del marketing, la generación automatizada de contenido ha resultado en una reducción de costos de millones de dólares y un aumento considerable de la velocidad en procesos que antes tomaban meses. Sin embargo, a pesar de sus beneficios, la IA generativa no es una solución "en un clic"; sigue requiriendo profesionales con talento y su adopción a gran escala se ha visto ralentizada por la precaución y enfoques aislados.</div>   
-Una evolución clave de la IA generativa son los agentes de IA. Estos agentes van más allá de la mera generación de contenido; tienen la capacidad de tomar decisiones basadas en el conocimiento, acceder a bases de datos internas y externas, y determinar cuándo recurrir a diferentes fuentes de información. Esta autonomía les permite alinear sus decisiones con los objetivos empresariales, lo que se traduce en una significativa reducción de costos en áreas como el servicio al cliente y las finanzas, una optimización en la generación de leads en la industria farmacéutica y un aumento general de la productividad en el sector tecnológico y de marketing. Los analistas incluso sugieren que "los agentes reemplazarán las aplicaciones" al interactuar directamente con los datos, eliminando la necesidad de interfaces tradicionales entre usuarios y la informació</p>
-
+<li>Agrivoltaica: Combina agricultura y paneles solares en un mismo terreno.</li>
+<li>Nanotecnología: Materiales como grafeno y perovskitas mejoran la eficiencia solar.</li>
+<li>Eólica offshore: Mayor generación con menor impacto visual.</li>
+<li>Digitalización: Monitoreo y optimización energética en tiempo real con IA y sensores.</li>
+<li>Construcción verde: Uso de vidrios térmicos, fachadas inteligentes y aislantes avanzados.</li>
+<h3></h3>
+</div>
   </div>
 
-</body>
-</html>
+  
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+      localStorage.setItem('theme'), document.body.classList.contains('light')
+    }
