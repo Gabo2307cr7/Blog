@@ -1,135 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<a href="Pagina.html">← Volver al blog</a>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seguridad en internet</title>
+  <title>Seguridad en Internet</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
-      color: #2c3e50;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    h1 {
-      color: #34495e;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      color: white;
-      background-color: #1abc9c;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    a:hover {
-      background-color: #16a085;
-    }
-
-    p, ul {
-      margin-bottom: 1em;
-    }
-
-    img.article-img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      transition: transform 0.4s ease;
-    }
-
-    img.article-img:hover {
-      transform: scale(1.02);
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-  
-</nav>
-
-<style>
-  .mini-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 30px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .mini-menu a {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #1abc9c;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .mini-menu a:hover,
-  .mini-menu a:focus {
-    background-color: #16a085;
-    transform: scale(1.05);
-  }
-
-  /* Para dispositivos pequeños */
-  @media (max-width: 480px) {
-    .mini-menu ul {
-      gap: 6px;
-    }
-    .mini-menu a {
-      font-size: 0.75rem;
-      padding: 5px 10px;
-    }
-  }
-</style>
-  <li>In<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguridad en internet</title>
-  <style>
-    /* Reset y base */
+    /* RESET Y BASE */
     * {
       box-sizing: border-box;
     }
@@ -138,7 +14,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
       color: #2c3e50;
       line-height: 1.6;
     }
@@ -149,23 +25,38 @@
       font-weight: 600;
       transition: color 0.3s ease;
     }
+
     a:hover {
       color: #16a085;
     }
 
+    .back-link {
+      display: block;
+      max-width: 200px;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background-color: #1abc9c;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-    /* Contenedor principal */
+    .back-link:hover {
+      background-color: #16a085;
+    }
+
     .container {
       max-width: 850px;
-      background: white;
-      margin: 40px auto 60px auto;
+      margin: 30px auto 50px;
+      background-color: #ffffff;
       padding: 30px 40px;
       border-radius: 14px;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      animation: fadeIn 0.8s ease forwards;
+      animation: fadeIn 0.8s ease-in-out;
     }
 
-    /* Imagen */
     img.article-img {
       width: 100%;
       max-height: 280px;
@@ -176,17 +67,18 @@
       transition: transform 0.4s ease;
       cursor: pointer;
     }
+
     img.article-img:hover {
       transform: scale(1.03);
     }
 
-    /* Títulos */
     h1 {
       font-size: 2.4rem;
       margin-bottom: 6px;
       color: #34495e;
       letter-spacing: 1px;
     }
+
     h2 {
       font-size: 1.8rem;
       margin-top: 40px;
@@ -196,7 +88,6 @@
       padding-bottom: 6px;
     }
 
-    /* Fecha */
     .date {
       font-size: 0.9rem;
       color: #7f8c8d;
@@ -204,11 +95,11 @@
       font-style: italic;
     }
 
-    /* Mini menú */
     nav.mini-menu {
       margin-bottom: 35px;
       text-align: center;
     }
+
     nav.mini-menu ul {
       list-style: none;
       padding: 0;
@@ -218,6 +109,7 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+
     nav.mini-menu a {
       padding: 8px 18px;
       background: #1abc9c;
@@ -228,13 +120,13 @@
       box-shadow: 0 3px 8px rgba(26, 188, 156, 0.4);
       transition: background-color 0.3s ease, transform 0.15s ease;
     }
+
     nav.mini-menu a:hover,
     nav.mini-menu a:focus {
       background-color: #16a085;
       transform: scale(1.1);
     }
 
-    /* Texto y listas */
     p {
       margin-bottom: 1.2em;
       font-size: 1rem;
@@ -245,12 +137,12 @@
       font-size: 1rem;
       color: #34495e;
     }
+
     ul li, ol li {
       margin-bottom: 0.6em;
       line-height: 1.4;
     }
 
-    /* Sub listas dentro de las li con ejemplo */
     li p {
       margin: 6px 0 0 0;
       font-style: italic;
@@ -258,12 +150,10 @@
       font-size: 0.9rem;
     }
 
-    /* Íconos en línea con emojis - estilo destacado */
     li strong {
       color: #16a085;
     }
 
-    /* Animación fadeIn */
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -275,27 +165,31 @@
       }
     }
 
-    /* Responsividad */
     @media (max-width: 720px) {
       .container {
         padding: 24px 28px;
         margin: 30px 15px 50px;
       }
+
       h1 {
         font-size: 2rem;
       }
+
       h2 {
         font-size: 1.5rem;
       }
     }
+
     @media (max-width: 480px) {
       nav.mini-menu ul {
         gap: 8px;
       }
+
       nav.mini-menu a {
         padding: 6px 14px;
         font-size: 0.8rem;
       }
+
       .back-link {
         max-width: 120px;
         font-size: 0.9rem;
@@ -314,15 +208,14 @@
 
     <nav class="mini-menu">
       <ul>
-        <li><a href="#Seguridad Informatica">Seguridad Informatica</a></li>
-        <li><a href="#Ciberseguridad">Ciberseguridad</a></li>
+        <li><a href="#Seguridad Informatica">Seguridad Informática</a></li>
+        <li><a href="#CiberSeguridad">Ciberseguridad</a></li>
         <li><a href="#datos">Datos</a></li>
         <li><a href="#procesos">Procesos</a></li>
         <li><a href="#personas">Personas</a></li>
       </ul>
     </nav>
 
-    <!-- Contenido que no modifico -->
     <h2 id="Seguridad Informatica">Seguridad Informatica</h2>
     <p>Que es la seguridad informatica?</p> 
     <p>La seguridad informática es el conjunto de medidas y prácticas diseñadas para proteger la información, los sistemas informáticos y los equipos contra accesos no autorizados, daños, robos o alteraciones. Su objetivo principal es garantizar la integridad, disponibilidad y confidencialidad de los datos y recursos tecnológicos.
@@ -459,7 +352,7 @@
     <p>Las personas son el eslabón más importante en la seguridad informática, ya que sus acciones pueden fortalecer o comprometer la protección.</p>
     <p>Importancia de la formación</p>
     <p>Educar a los usuarios para reconocer riesgos y adoptar buenas prácticas es clave para reducir incidentes.</p>
+
   </div>
 </body>
 </html>
-
