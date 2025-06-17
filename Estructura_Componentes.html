@@ -1,7 +1,6 @@
-3<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<a href="Pagina.html">← Volver al blog</a>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estructura y Componentes</title>
@@ -79,217 +78,183 @@
 </head>
 <body>
 
+  <a href="Pagina.html">← Volver al blog</a>
+
   <div class="container">
     <img src="1.jpg" alt="Estructura de información" class="article-img">
 
-    <h1>🌄 Estructura y Componentes de internet </h1>
-    <p><strong>Publicado el:</strong> 22 de mayo de 2025</p>
+    <h1>🌄 Estructura y Componentes de Internet</h1>
+    <p><strong>Publicado el:</strong> 22 de mayo de 2025.</p>
 
+    <p>Este artículo explica la estructura general de los sistemas de información, incluyendo componentes como:</p>
+
+    <nav class="mini-menu">
+      <ul>
+        <li><a href="#Internet">Internet</a></li>
+        <li><a href="#Caracteristica">Características del internet</a></li>
+        <li><a href="#Infraestructura">Infraestructura Física</a></li>
+        <li><a href="#Protocolos">Protocolos de Comunicación</a></li>
+        <li><a href="#Evolucion">Evolución y tendencia en Internet</a></li>
+      </ul>
+    </nav>
+
+    <style>
+      .mini-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 30px 0;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .mini-menu a {
+        display: inline-block;
+        padding: 6px 12px;
+        background-color: #1abc9c;
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-radius: 20px;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .mini-menu a:hover,
+      .mini-menu a:focus {
+        background-color: #16a085;
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 480px) {
+        .mini-menu ul {
+          gap: 6px;
+        }
+        .mini-menu a {
+          font-size: 0.75rem;
+          padding: 5px 10px;
+        }
+      }
+    </style>
+
+    <h2 id="Internet">¿Qué es el Internet?</h2>
     <p>
-      Este artículo explica la estructura general de los sistemas de información, incluyendo componentes como:
+      Internet es una red de computadoras que se encuentran interconectadas a nivel mundial para compartir información...
     </p>
-  <nav class="mini-menu">
-  <ul>
-    <li><a href="#Internet">Internet</a></li>
-    <li><a href="#Caracteristicas">Caracteristicas del internet</a></li>
-    <li><a href="#Infraestructura">Infraestructura Física</a></li>
-    <li><a href="#Protocolos">Protocolos de Comunicació</a></li>
-    <li><a href="#Evolucion">Evolucion y tendencia en Internet</a></li>
-  </ul>
-</nav>
 
-<style>
-  .mini-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 30px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+    <h2 id="Caracteristica">Características del internet</h2>
+    <ul>
+      <li>Acceso gratis</li>
+      <li>Todos pueden acceder</li>
+      <li>Información variada</li>
+      <li>Global</li>
+      <li>Veloz</li>
+    </ul>
 
-  .mini-menu a {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #1abc9c;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+    <h2 id="Infraestructura">🌐 Infraestructura Física</h2>
+    <ul>
+      <li>Cables submarinos y terrestres de fibra óptica</li>
+      <p>Los cables submarinos de fibra óptica son esenciales para la conectividad global de Internet...</p>
 
-  .mini-menu a:hover,
-  .mini-menu a:focus {
-    background-color: #16a085;
-    transform: scale(1.05);
-  }
+      <li>🏢 Centros de datos</li>
+      <p>Los centros de datos son instalaciones físicas que albergan servidores...</p>
 
-  /* Para dispositivos pequeños */
-  @media (max-width: 480px) {
-    .mini-menu ul {
-      gap: 6px;
-    }
-    .mini-menu a {
-      font-size: 0.75rem;
-      padding: 5px 10px;
-    }
-  }
-</style>
+      <p>En el ámbito terrestre, los cables de fibra óptica se utilizan para interconectar ciudades...</p>
 
-  <h2 id="Internet">¿Que es el Internet? </h2>
-<p>
-Internet es una red de computadoras que se encuentran interconectadas a nivel mundial para compartir información. Se trata de un conjunto de equipos que se relacionan entre sí a través de la utilización de un lenguaje universal.
-La interconexión de Internet se logra mediante diversos protocolos y servicios. Los protocolos son elementos que permiten la unión de la red y la transmisión de información, puesto que fragmentan, unen y traducen los mensajes para que los datos lleguen correctamente de una computadora a otra. Por su parte, los servicios son los que permiten a los usuarios crear, enviar, recibir y acceder a la información. Los más conocidos son el correo electrónico, los chats, las redes sociales y la web, es decir, el conjunto de sitios en línea.
-</p>
+      <li>🖧 Routers y switches</li>
+      <p>Routers: Dirigen el tráfico de datos entre diferentes redes...</p>
+      <p>Switches: Operan dentro de una red local (LAN)...</p>
 
-<h2 id="Caracteristica">Caracteristicas del internet</h2>
-<p>
-<ul>
-  <li> Accesso gratis</li>
-  <li> Todos puedes acceder</li>
-  <li> Informacion variada</li>
-  <li> Global</li>
-  <li> Veloz</li>
-</ul>
-</p>
+      <li>🌍 Proveedores de servicios de Internet (ISP)</li>
+      <p>Los Proveedores de Servicios de Internet son empresas que ofrecen acceso a Internet...</p>
 
-<h2 id="Infraestructura">🌐Infraestructura Física</h2>
-<ul>
-  <li>Cables submarinos y terrestres de fibra óptica</li>
-      <p>Los cables submarinos de fibra óptica son esenciales para la conectividad global de Internet. Estos cables se instalan sobre el lecho marino y permiten la transmisión de datos a través de largas distancias con alta capacidad y baja latencia. Por ejemplo, el proyecto Anjana de Meta conectará España con Estados Unidos mediante un cable de 7.121 kilómetros y una capacidad de casi 500 terabits por segundo </p>
-  <li>🏢Centros de datos</il>
-     <p>Los centros de datos son instalaciones físicas que albergan servidores, sistemas de almacenamiento y equipos de red. Estos centros gestionan, procesan y almacenan grandes volúmenes de datos, siendo fundamentales para servicios como la computación en la nube, el alojamiento web y el streaming. Por ejemplo, Amazon Web Services (AWS) ha iniciado la construcción de un nuevo centro de datos en Huesca, España</p>
-  <p>En el ámbito terrestre, los cables de fibra óptica se utilizan para interconectar ciudades y regiones, formando la columna vertebral de las redes de telecomunicaciones.</p>
-  <li>🖧Routers y switches</li>
-    <p>Los routers y switches son dispositivos de red que gestionan el tráfico de datos:</p>
-    <p>Routers: Dirigen el tráfico de datos entre diferentes redes, determinando la mejor ruta para que los paquetes lleguen a su destino</p>
-    <p>Switches: Operan dentro de una red local (LAN) y facilitan la comunicación entre dispositivos conectados, como computadoras y servidores</p>
-  <li>🌍Proveedores de servicios de Internet (ISP)</li>
-    <p>Los Proveedores de Servicios de Internet (ISP) son empresas que ofrecen acceso a Internet a usuarios y organizaciones. Estos proveedores gestionan la infraestructura necesaria para la transmisión de datos y ofrecen servicios como acceso de banda ancha, correo electrónico y alojamiento web.</p>
-  <li>🔄Puntos de intercambio de Internet (IXP)</li>
-    <p>Los Puntos de Intercambio de Internet (IXP) son infraestructuras físicas donde diferentes redes se interconectan para intercambiar tráfico de datos. Estos puntos permiten una comunicación más eficiente y económica entre redes, reduciendo la latencia y mejorando la calidad del servicio. A nivel global, existen más de 1.400 IXP activos .
-    En México, el Consorcio de Intercambio de Tráfico de Internet ha establecido el primer IXP en el país, ubicado en la Ciudad de México, con el objetivo de mejorar la eficiencia en las comunicaciones locales .</p>
-</ul>
+      <li>🔄 Puntos de intercambio de Internet (IXP)</li>
+      <p>Los Puntos de Intercambio de Internet (IXP) son infraestructuras físicas...</p>
+    </ul>
 
-<h2 id="Protocolos"> Protocolos de Comunicación</h2>
-<ul>
-  <li>Modelo OSI</li>
-  <p>¿Que es el modelo OSI?</p>
-  <p>El Modelo OSI es un marco de referencia que describe cómo los datos se transfieren a través de una red de un dispositivo a otro. Fue desarrollado por la Organización Internacional de Normalización (ISO) para promover la interoperabilidad entre distintos sistemas y fabricantes.
-    Este modelo divide el proceso de comunicación en 7 capas, cada una con funciones específicas. Ayuda a entender qué ocurre "detrás de escena" cuando envías un mensaje, visitas una página web o realizas una videollamada</p>
-  <p>¿Cuales son esas 7 capas</p> 
-  <ul> 
-    <li> 🧑 Aplicación (Application)
-<p>Función: Interacción directa con el usuario final.</p>
+    <h2 id="Protocolos">Protocolos de Comunicación</h2>
+    <ul>
+      <li>Modelo OSI</li>
+      <p>¿Qué es el modelo OSI?</p>
+      <p>El Modelo OSI es un marco de referencia que describe cómo los datos se transfieren...</p>
+      <p>¿Cuáles son esas 7 capas?</p>
+      <ul>
+        <li>🧑 Aplicación (Application)
+          <p>Función: Interacción directa con el usuario final.</p>
+          <p>Ejemplos: Navegadores web (HTTP), clientes de correo electrónico (SMTP), FTP.</p>
+        </li>
+        <li>🧠 Presentación (Presentation)
+          <p>Función: Traducción y formato de datos.</p>
+        </li>
+        <li>🛠 Sesión (Session)
+          <p>Función: Manejo de sesiones de comunicación.</p>
+        </li>
+        <li>📦 Transporte (Transport)
+          <p>Función: Transmisión confiable de datos entre sistemas.</p>
+        </li>
+        <li>🛰 Red (Network)
+          <p>Función: Enrutamiento de datos entre redes.</p>
+        </li>
+        <li>🖧 Enlace de Datos (Data Link)
+          <p>Función: Transferencia de datos entre dispositivos.</p>
+        </li>
+        <li>🔌 Física (Physical)
+          <p>Función: Transmisión de bits a través del medio físico.</p>
+        </li>
+      </ul>
+      <li>Protocolos principales: IP, TCP, UDP, HTTP, HTTPS, FTP</li>
+      <h2>¿Qué son estos protocolos?</h2>
+      <p>Es el conjunto de reglas que permite a las computadoras comunicarse en una red...</p>
 
-<p>Ejemplos: Navegadores web (HTTP), clientes de correo electrónico (SMTP), FTP.</p>
+      <h4>IP</h4>
+      <p>
+        Asigna una dirección única (IP) a cada dispositivo.<br>
+        Divide los mensajes en paquetes y los envía por rutas eficientes.<br>
+        Asegura que los paquetes lleguen al destino correcto y se ensamblen en orden.
+      </p>
 
-Qué hace: Ofrece servicios de red a las aplicaciones.</p>
-  </li>
+      <h4>TCP</h4>
+      <p>Garantiza que los datos lleguen completos y en el orden correcto...</p>
 
-<li> 🧠 Presentación (Presentation)
-<p>Función: Traducción y formato de datos.</p>
+      <h4>UDP</h4>
+      <p>Envía los datos más rápido, sin confirmar si llegaron...</p>
 
-<p>Ejemplos: Conversión de texto, cifrado (SSL/TLS), compresión (JPEG, MP3).</p>
+      <h4>HTTP</h4>
+      <p>Permite que navegadores web y servidores intercambien información...</p>
 
-<p>Qué hace: Convierte los datos a un formato que la capa de aplicación pueda entender.</p>
-</li>
+      <h4>FTP</h4>
+      <p>Permite subir y descargar archivos entre computadoras...</p>
+    </ul>
 
-<li> 🛠 Sesión (Session)
-<p>Función: Manejo de sesiones de comunicación.</p>
+    <h2 id="Evolucion">Evolución y tendencias de Internet</h2>
+    <ul>
+      <li>Internet de las Cosas (IoT)</li>
+      <p></p>
+      <li>5G y redes futuras</li>
+      <p></p>
+    </ul>
 
-<p>Ejemplos: Control de sesiones de login, restauración de sesiones.</p>
+    <h2>🔗 Referencias</h2>
+    <ul>
+      <li>
+        <a href="https://www.huffingtonpost.es/tecnologia/luz-verde-ambicioso-plan-conectar-espana-eeuu-cable-7121-kilometros.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+          HuffPost - Proyecto Anjana: cable submarino entre España y EE.UU.
+        </a>
+      </li>
+      <li>
+        <a href="https://elpais.com/economia/2024-05-22/amazon-invertira-15700-millones-en-una-red-de-centros-de-datos-en-aragon.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+          El País - Centros de datos de AWS en Huesca, España
+        </a>
+      </li>
+      <li>
+        <a href="https://ixp.mx/antecedentes/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+          IXP México - Consorcio para el Intercambio de Tráfico de Internet
+        </a>
+      </li>
+    </ul>
 
-<p>Qué hace: Establece, gestiona y termina conexiones entre aplicaciones.</p>
-</li>
-
-<li>4. 📦Transporte (Transport)
- <p>Función: Transmisión confiable de datos entre sistemas.</p>
-
-<p>Ejemplos: TCP (confiable), UDP (rápido pero no confiable).</p>
-
-<p>Qué hace: Divide los datos en segmentos, los ordena y maneja errores.</p>
-</li>
-
-<li> 5. 🛰 Red (Network)
-<p>Función: Enrutamiento de datos entre redes.</p>
-
-<p>Ejemplos: IP (Internet Protocol), routers.</p>
-
-<p>Qué hace: Determina la ruta que seguirán los datos hacia su destino.</p>
-  </li>
-
-<li> 6. 🖧 Enlace de Datos (Data Link)
-<p>Función: Transferencia de datos entre dispositivos de una misma red.</p>
-
-<p>Ejemplos: Ethernet, switches, direcciones MAC.</p>
-
-<p>Qué hace: Detecta y corrige errores a nivel de enlace físico.</p>
-</li>
-
-<li> 7. 🔌 Física (Physical)
-<p>Función: Transmisión de bits a través del medio físico.</p>
-
-<p>Ejemplos: Cables, señales eléctricas, fibra óptica, Wi-Fi.</p>
-
-<p>Qué hace: Transporta señales eléctricas u ópticas entre dispositivos.</p>
-</li>
-
-</ul
-  <li>protocolos principales: IP, TCP, UDP, HTTP, HTTPS, FTP</li>
-  <h2>¿Que son estos protocolos</h2>
-  <p>s el conjunto de reglas que permite a las computadoras comunicarse en una red, como Internet. Actúa como un idioma universal entre dispositivos, asegurando que los datos lleguen correctamente a su destino.</p>
-  <h4> IP</h4>
-  <p> Asigna una dirección única (IP) a cada dispositivo.
-  Divide los mensajes en paquetes y los envía por rutas eficientes.
-  Asegura que los paquetes lleguen al destino correcto y se ensamblen en orden. </p>
-  <h4> TCP</h4>
-  <p>Garantiza que los datos lleguen completos y en el orden correcto. Vuelve a enviar los paquetes que se pierden.
-    Es ideal para enviar archivos, correos o cualquier información importante.</p>
-  <h4> UDP</h4>
-  <p>  Envía los datos más rápido, sin confirmar si llegaron.
-    Ideal para transmisiones en vivo, juegos en línea o videollamadas.
-    Prefiere la velocidad sobre la precisión.</p>
-  <h4>HTTP</h4>
-  <p> Permite que navegadores web y servidores intercambien información.
-    HTTP es la base de la web.
-    HTTPS añade seguridad con cifrado (SSL/TLS) para proteger tus datos.  </p>
-  <h4> FTP</h4>
-  <p>Permite subir y descargar archivos entre computadoras.
-  Existen versiones seguras como FTPS que protegen los datos con cifrado.
-  Usado para administrar archivos en servidores web.  </p>
-  
-</ul>
-
-<h2 id="Evolucion"> Evolución y tendencias de Internet</h2>
-
-    <li>Internet de las Cosas (IoT)</li>
-      <p> </p>
-    <li>5G y redes futuras</li>
-    <p> </p>
   </div>
-<h2>🔗 Referencias</h2>
-<ul>
-  <li>
-    <a href="https://www.huffingtonpost.es/tecnologia/luz-verde-ambicioso-plan-conectar-espana-eeuu-cable-7121-kilometros.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
-      HuffPost - Proyecto Anjana: cable submarino entre España y EE.UU.
-    </a>
-  </li>
-  <li>
-    <a href="https://elpais.com/economia/2024-05-22/amazon-invertira-15700-millones-en-una-red-de-centros-de-datos-en-aragon.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
-      El País - Centros de datos de AWS en Huesca, España
-    </a>
-  </li>
-  <li>
-    <a href="https://ixp.mx/antecedentes/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
-      IXP México - Consorcio para el Intercambio de Tráfico de Internet
-    </a>
-  </li>
-</ul>
-
 </body>
 </html>
